@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47AF55"
+
+    tools:context=".Registrar">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        style="@style/TEXTO_ROSA"
+        android:layout_marginTop="110dp"
+        android:text="Insertar empleado"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        style="@style/TEXTO_GRIS"
+        android:layout_marginEnd="12dp"
+        android:text="Nombre"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teNombre"
+        app:layout_constraintEnd_toStartOf="@+id/teNombre" />
+
+    <EditText
+        android:id="@+id/teNombre"
+        style="@style/CAJA_ROSA"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/teApellido2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvApellido1"
+        style="@style/TEXTO_GRIS"
+        android:layout_marginEnd="12dp"
+        android:text="Primer Apellido"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teApellido1"
+        app:layout_constraintEnd_toStartOf="@+id/teApellido1" />
+
+    <EditText
+        android:id="@+id/teApellido1"
+        style="@style/CAJA_ROSA"
+        android:layout_marginTop="20dp"
+        android:hint="Primer Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/teApellido2"
+        app:layout_constraintTop_toBottomOf="@+id/teNombre" />
+
+    <TextView
+        android:id="@+id/tvApellido2"
+        style="@style/TEXTO_GRIS"
+        android:layout_marginEnd="12dp"
+        android:text="Segundo Apellido"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teApellido2"
+        app:layout_constraintEnd_toStartOf="@+id/teApellido2" />
+
+    <EditText
+        android:id="@+id/teApellido2"
+        style="@style/CAJA_ROSA"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Segundo Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teApellido1"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teApellido2">
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            style="@style/TEXTO_ROSA"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TEXTO_ROSA"
+            android:text="Hombre" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

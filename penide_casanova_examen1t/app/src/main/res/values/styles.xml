@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BOTONES_GRISES">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">#9C9C9C</item>
+    </style>
+
+    <style name="TEXTO_ROSA">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#CE5B9C</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TEXTO_GRIS">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#4E4D4E</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CAJA_ROSA">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#EFD0E2</item>
+        <item name="android:ems">8</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+</resources>
