@@ -8,25 +8,31 @@
 
     android:background="#1111">
 
-    <ToggleButton
-        android:id="@+id/beliminar"
-        style="@style/BOTONES_GRISES"
-        android:text="ELIMINAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/leertextocontador"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/leertextocontador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/beliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/beliminar"
-        app:layout_constraintTop_toTopOf="@+id/beliminar" />
+
+        <ToggleButton
+            android:id="@+id/beliminar"
+            style="@style/BOTONES_GRISES"
+            android:textOff="ELIMINAR"
+            android:visibility="visible"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/leertextocontador"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/leertextocontador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/beliminar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/beliminar"
+            app:layout_constraintTop_toTopOf="@+id/beliminar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,12 +3,12 @@ package com.example.penide_casanova_examen1t
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.example.penide_casanova_examen1t.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,12 +25,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.benviar.setOnClickListener{
             val enviar = Intent(this, Eliminar::class.java)
-            //enviar.dataString(binding.textocontador.text.toString(),textoEliminar)
+
+            var textoPasar= binding.textocontador.text.toString()
+
+            enviar.putExtra(Intent.EXTRA_TEXT,textoPasar)
             startActivity(enviar)
 
         }
 
         binding.bregistrar.setOnClickListener{
+
             val registrar = Intent(this, Registrar::class.java)
             startActivity(registrar)
         }
